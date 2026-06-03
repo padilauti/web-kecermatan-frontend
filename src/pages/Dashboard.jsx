@@ -15,20 +15,23 @@ function Dashboard() {
         <CardMenu type="waktu" value="12 Jam" />
       </div>
 
-      {/* LATIHAN: tampil 2x2 di desktop, 1 kolom di mobile */}
-      <div className="latihan-wrapper">
-        <h2>Pilihan Latihan</h2>
-        <div className="latihan-grid">
-          <LatihanCard type="angka" />
-          <LatihanCard type="huruf" />
-          <LatihanCard type="simbol" />
-          <LatihanCard type="gambar" />
+      {/* LATIHAN + GRAFIK: Sebelahan di desktop */}
+      <div className="dashboard-middle">
+        {/* LATIHAN */}
+        <div className="latihan-wrapper">
+          <h2>Pilihan Latihan</h2>
+          <div className="latihan-grid">
+            <LatihanCard type="angka" />
+            <LatihanCard type="huruf" />
+            <LatihanCard type="simbol" />
+            <LatihanCard type="gambar" />
+          </div>
         </div>
-      </div>
 
-      {/* GRAFIK: full width section */}
-      <div className="chart-section">
-        <ChartCard />
+        {/* GRAFIK */}
+        <div className="chart-section">
+          <ChartCard />
+        </div>
       </div>
 
       {/* RIWAYAT: full width section */}

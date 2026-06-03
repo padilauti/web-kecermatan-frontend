@@ -6,10 +6,13 @@
   justify-content:space-between;
   align-items:center;
   box-shadow:0 2px 8px rgba(0,0,0,0.05);
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  margin-right: -20px;
+  border-radius: 0;
 }
 
 /* full-bleed header: stretch outside centered container */
-/* removed full-bleed header to keep layout consistent */
 
 /* KIRI */
 .navbar-left{
