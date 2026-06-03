@@ -83,6 +83,17 @@ body {
   .layout-main {
     width: 100%;
   }
+
+  .cards {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .dashboard-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 768px) {
