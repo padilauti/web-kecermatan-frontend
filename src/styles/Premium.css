@@ -193,3 +193,43 @@
 
   box-shadow: 0 10px 20px rgba(19, 58, 99, 0.3);
 }
+
+@media (max-width: 900px) {
+  .premium-layout {
+    flex-direction: column;
+  }
+
+  .premium-content {
+    padding: 20px;
+  }
+
+  .premium-card {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+    padding: 30px 24px;
+  }
+
+  .premium-header h1 {
+    font-size: 34px;
+  }
+
+  .premium-header p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .premium-card {
+    padding: 24px 20px;
+  }
+
+  .premium-price {
+    font-size: 36px;
+  }
+
+  .upgrade-btn {
+    padding: 14px;
+    font-size: 16px;
+  }
+}

@@ -153,12 +153,37 @@
     padding: 16px;
   }
 
+  .training-container {
+    max-width: 100%;
+    padding: 0;
+  }
+
   .training-card {
+    width: 100%;
+    max-width: 100%;
     padding: 20px;
   }
 
   .info-box {
     flex-direction: column;
+  }
+
+  .info-item {
+    min-width: 100%;
+  }
+
+  .simulation-banner {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .instruction-box {
+    padding: 16px;
+  }
+
+  .start-btn {
+    padding: 14px;
+    font-size: 15px;
   }
 
   .page-title {

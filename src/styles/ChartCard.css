@@ -4,6 +4,7 @@
   padding:24px;
   box-shadow:0 0 10px rgba(0,0,0,0.06);
   width:620px;
+  max-width: 100%;
 }
 
 .dummy-chart{
@@ -27,4 +28,30 @@
   width:40px;
   background:linear-gradient(180deg,#60a5fa,#2563eb);
   border-radius:10px 10px 0 0;
+}
+
+@media (max-width: 768px) {
+  .chart-wrapper {
+    width: 100%;
+    padding: 18px;
+  }
+
+  .dummy-chart {
+    min-height: 220px;
+    padding: 16px;
+  }
+
+  .bars {
+    gap: 10px;
+  }
+
+  .bar {
+    width: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bar {
+    width: 20px;
+  }
 }

@@ -9,11 +9,13 @@ body {
 
 .container-app {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .main-content {
   flex: 1;
   padding: 20px;
+  min-width: 0;
 }
 
 /* 4 CARD ATAS */
@@ -29,4 +31,47 @@ body {
   grid-template-columns: 2fr 1fr;
   gap: 20px;
   margin-top: 30px;
+}
+
+@media (max-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dashboard-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-app {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .main-content {
+    padding: 15px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-content {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 15px;
+  }
+
+  .cards {
+    gap: 15px;
+  }
 }
