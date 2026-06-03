@@ -9,12 +9,7 @@
 }
 
 /* full-bleed header: stretch outside centered container */
-.navbar {
-  width: calc(100% + 40px);
-  margin-left: -20px;
-  margin-right: -20px;
-  border-radius: 0;
-}
+/* removed full-bleed header to keep layout consistent */
 
 /* KIRI */
 .navbar-left{
