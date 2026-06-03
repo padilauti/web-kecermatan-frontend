@@ -8,6 +8,14 @@
   box-shadow:0 2px 8px rgba(0,0,0,0.05);
 }
 
+/* full-bleed header: stretch outside centered container */
+.navbar {
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  margin-right: -20px;
+  border-radius: 0;
+}
+
 /* KIRI */
 .navbar-left{
   display:flex;
