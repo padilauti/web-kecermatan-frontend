@@ -33,13 +33,48 @@ body {
   margin-top: 30px;
 }
 
-@media (max-width: 1200px) {
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
+.layout-app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.layout-main {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+}
+
+.layout-content {
+  min-height: 100vh;
+  transition: filter 0.25s ease;
+}
+
+.layout-app.sidebar-open .layout-content {
+  filter: brightness(0.95);
+}
+
+.sidebar-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  z-index: 150;
+}
+
+.layout-app.sidebar-open .sidebar-backdrop {
+  display: block;
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .layout-app {
+    flex-direction: column;
   }
 
-  .dashboard-content {
-    grid-template-columns: 1fr;
+  .layout-main {
+    width: 100%;
   }
 }
 

@@ -10,6 +10,7 @@ import AngkaHilang from "./latihan/AngkaHilang";
 import AngkaHilangQuiz from "./latihan/AngkaHilangQuiz";
 import SimbolHilang from "./latihan/SimbolHilang";
 import SimbolHilangQuiz from "./latihan/SimbolHilangQuiz";
+import AuthenticatedLayout from "./components/AuthenticatedLayout"
 
 function App() {
   return (
@@ -23,12 +24,12 @@ function App() {
         <Route path="/register" element={<Register />} />
 
         {/* DASHBOARD */}
-        <Route path="/" element={<Dashboard />} />
+        <Route path="/" element={<AuthenticatedLayout><Dashboard /></AuthenticatedLayout>} />
 
-        <Route path="/premium" element={<Premium />} />
+        <Route path="/premium" element={<AuthenticatedLayout><Premium /></AuthenticatedLayout>} />
 
         {/* HURUF HILANG */}
-        <Route path="/huruf-hilang" element={<HurufHilang />} />
+        <Route path="/huruf-hilang" element={<AuthenticatedLayout><HurufHilang /></AuthenticatedLayout>} />
 
         <Route
           path="/huruf-hilang/quiz"
@@ -36,14 +37,14 @@ function App() {
         />
 
         {/* ANGKA HILANG */}
-        <Route path="/angka-hilang" element={<AngkaHilang />} />
+        <Route path="/angka-hilang" element={<AuthenticatedLayout><AngkaHilang /></AuthenticatedLayout>} />
         <Route
           path="/angka-hilang/quiz"
           element={<AngkaHilangQuiz />}
         />
 
         {/* SIMBOL HILANG */}
-        <Route path="/simbol-hilang" element={<SimbolHilang />} />
+        <Route path="/simbol-hilang" element={<AuthenticatedLayout><SimbolHilang /></AuthenticatedLayout>} />
         <Route
           path="/simbol-hilang/quiz"
           element={<SimbolHilangQuiz />}

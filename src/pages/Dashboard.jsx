@@ -1,5 +1,3 @@
-import Sidebar from "../components/Sidebar"
-import Navbar from "../components/Navbar"
 import CardMenu from "../components/CardMenu"
 import LatihanCard from "../components/LatihanCard"
 import ChartCard from "../components/ChartCard"
@@ -7,13 +5,7 @@ import HistoryCard from "../components/HistoryCard"
 
 function Dashboard() {
   return (
-    <div className="container-app">
-
-      <Sidebar />
-
-      <div className="main-content">
-
-        <Navbar />
+    <div className="main-content">
 
         {/* CARD STATISTIK */}
         <div className="cards">
@@ -44,8 +36,6 @@ function Dashboard() {
 
         {/* 🔥 HISTORY DI LUAR GRID (FULL WIDTH) */}
         <HistoryCard />
-
-      </div>
 
     </div>
   )

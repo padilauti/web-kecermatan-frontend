@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-function Navbar() {
+function Navbar({ onMenuClick }) {
   const [open, setOpen] = useState(false)
 
   return (
@@ -8,7 +8,13 @@ function Navbar() {
 
       {/* KIRI */}
       <div className="navbar-left">
-        <button className="menu-btn">☰</button>
+        <button
+          className="menu-btn"
+          type="button"
+          onClick={() => onMenuClick && onMenuClick()}
+        >
+          ☰
+        </button>
 
         <div>
           <h3>Halo, Uti Nur Padila 👋</h3>

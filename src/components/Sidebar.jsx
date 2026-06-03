@@ -15,7 +15,7 @@ import {
 
 import { Link, useNavigate } from "react-router-dom"
 
-function Sidebar() {
+function Sidebar({ isOpen, onClose }) {
   const navigate = useNavigate()
 
   const handleLogout = () => {
@@ -25,8 +25,12 @@ function Sidebar() {
     navigate("/login")
   }
 
+  const handleNavClick = () => {
+    if (onClose) onClose()
+  }
+
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${isOpen ? "open" : ""}`}>
 
       {/* HEADER */}
       <div className="sidebar-header">
@@ -35,6 +39,13 @@ function Sidebar() {
           KECERMATAN <br />
           <span className="sub-title">POLRI</span>
         </h2>
+        <button
+          type="button"
+          className="sidebar-close-btn"
+          onClick={onClose}
+        >
+          ×
+        </button>
       </div>
 
       {/* MENU */}
@@ -43,7 +54,7 @@ function Sidebar() {
         {/* DASHBOARD */}
         <li className="menu-title">Menu Utama</li>
 
-        <Link to="/" className="menu-link">
+        <Link to="/" className="menu-link" onClick={handleNavClick}>
           <li>
             <LayoutDashboard size={18} />
             Dashboard
@@ -55,21 +66,21 @@ function Sidebar() {
         {/* LATIHAN */}
         <li className="menu-title">Latihan</li>
 
-        <Link to="/angka-hilang" className="menu-link">
+        <Link to="/angka-hilang" className="menu-link" onClick={handleNavClick}>
           <li>
             <Hash size={18} />
             Angka Hilang
           </li>
         </Link>
 
-        <Link to="/huruf-hilang" className="menu-link">
+        <Link to="/huruf-hilang" className="menu-link" onClick={handleNavClick}>
           <li>
             <Type size={18} />
             Huruf Hilang
           </li>
         </Link>
 
-        <Link to="/simbol-hilang" className="menu-link">
+        <Link to="/simbol-hilang" className="menu-link" onClick={handleNavClick}>
           <li>
             <Circle size={18} />
             Simbol Hilang
@@ -106,7 +117,7 @@ function Sidebar() {
         {/* LAINNYA */}
         <li className="menu-title">Lainnya</li>
 
-        <Link to="/premium" className="menu-link">
+        <Link to="/premium" className="menu-link" onClick={handleNavClick}>
           <li>
             <Crown size={18} />
             Premium

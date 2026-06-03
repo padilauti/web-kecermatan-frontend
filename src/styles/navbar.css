@@ -55,6 +55,16 @@
   padding:10px 12px;
   border-radius:10px;
   cursor:pointer;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.menu-btn:hover{
+  background:#e5e7eb;
+  transform: translateY(-1px);
+}
+
+.menu-btn:active{
+  transform: translateY(0);
 }
 
 /* USER DROPDOWN WRAPPER */

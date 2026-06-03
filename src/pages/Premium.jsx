@@ -1,16 +1,8 @@
-import Sidebar from "../components/Sidebar"
-
 import { Crown, CheckCircle } from "lucide-react"
 
 function Premium() {
   return (
-    <div className="premium-layout">
-
-      {/* SIDEBAR */}
-      <Sidebar />
-
-      {/* CONTENT */}
-      <div className="premium-content">
+    <div className="premium-content">
 
         <div className="premium-page">
 
@@ -81,8 +73,6 @@ function Premium() {
           </div>
 
         </div>
-
-      </div>
 
     </div>
   )

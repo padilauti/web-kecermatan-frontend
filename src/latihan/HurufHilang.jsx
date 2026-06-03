@@ -1,17 +1,10 @@
-import Sidebar from "../components/Sidebar";
 import { useNavigate } from "react-router-dom";
 
 function HurufHilang() {
   const navigate = useNavigate();
 
   return (
-    <div className="premium-layout">
-
-      {/* SIDEBAR */}
-      <Sidebar />
-
-      {/* CONTENT */}
-      <div className="premium-content">
+    <div className="premium-content">
 
         <div className="training-page">
 
@@ -93,8 +86,6 @@ function HurufHilang() {
           </div>
 
         </div>
-
-      </div>
 
     </div>
   );

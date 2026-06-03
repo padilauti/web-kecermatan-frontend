@@ -1,15 +1,10 @@
-import Sidebar from "../components/Sidebar";
 import { useNavigate } from "react-router-dom";
 
 function SimbolHilang() {
   const navigate = useNavigate();
 
   return (
-    <div className="premium-layout">
-
-      <Sidebar />
-
-      <div className="premium-content">
+    <div className="premium-content">
 
         <div className="training-page">
 
@@ -91,8 +86,6 @@ function SimbolHilang() {
           </div>
 
         </div>
-
-      </div>
 
     </div>
   );
