@@ -13,7 +13,7 @@ import {
   LogOut
 } from "lucide-react"
 
-import { Link, useNavigate } from "react-router-dom"
+import { NavLink, useNavigate } from "react-router-dom"
 
 function Sidebar({ isOpen, onClose }) {
   const navigate = useNavigate()
@@ -54,38 +54,62 @@ function Sidebar({ isOpen, onClose }) {
         {/* DASHBOARD */}
         <li className="menu-title">Menu Utama</li>
 
-        <Link to="/" className="menu-link" onClick={handleNavClick}>
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            `menu-link${isActive ? " active" : ""}`
+          }
+          onClick={handleNavClick}
+        >
           <li>
             <LayoutDashboard size={18} />
             Dashboard
           </li>
-        </Link>
+        </NavLink>
 
         <div className="divider"></div>
 
         {/* LATIHAN */}
         <li className="menu-title">Latihan</li>
 
-        <Link to="/angka-hilang" className="menu-link" onClick={handleNavClick}>
+        <NavLink
+          to="/angka-hilang"
+          className={({ isActive }) =>
+            `menu-link${isActive ? " active" : ""}`
+          }
+          onClick={handleNavClick}
+        >
           <li>
             <Hash size={18} />
             Angka Hilang
           </li>
-        </Link>
+        </NavLink>
 
-        <Link to="/huruf-hilang" className="menu-link" onClick={handleNavClick}>
+        <NavLink
+          to="/huruf-hilang"
+          className={({ isActive }) =>
+            `menu-link${isActive ? " active" : ""}`
+          }
+          onClick={handleNavClick}
+        >
           <li>
             <Type size={18} />
             Huruf Hilang
           </li>
-        </Link>
+        </NavLink>
 
-        <Link to="/simbol-hilang" className="menu-link" onClick={handleNavClick}>
+        <NavLink
+          to="/simbol-hilang"
+          className={({ isActive }) =>
+            `menu-link${isActive ? " active" : ""}`
+          }
+          onClick={handleNavClick}
+        >
           <li>
             <Circle size={18} />
             Simbol Hilang
           </li>
-        </Link>
+        </NavLink>
 
         <li>
           <Image size={18} />
@@ -117,12 +141,18 @@ function Sidebar({ isOpen, onClose }) {
         {/* LAINNYA */}
         <li className="menu-title">Lainnya</li>
 
-        <Link to="/premium" className="menu-link" onClick={handleNavClick}>
+        <NavLink
+          to="/premium"
+          className={({ isActive }) =>
+            `menu-link${isActive ? " active" : ""}`
+          }
+          onClick={handleNavClick}
+        >
           <li>
             <Crown size={18} />
             Premium
           </li>
-        </Link>
+        </NavLink>
 
         <li>
           <Settings size={18} />
