@@ -1,0 +1,195 @@
+/* =========================
+   LAYOUT
+========================= */
+.premium-layout {
+  display: flex;
+}
+
+.premium-content {
+  flex: 1;
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+/* =========================
+   PAGE
+========================= */
+.premium-page {
+  width: 100%;
+}
+
+/* =========================
+   HEADER
+========================= */
+.premium-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.premium-icon {
+  width: 85px;
+  height: 85px;
+
+  margin: auto;
+  margin-bottom: 20px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #133a63;
+
+  color: white;
+
+  box-shadow: 0 8px 20px rgba(19, 58, 99, 0.3);
+}
+
+.premium-header h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.premium-header p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #6b7280;
+}
+
+/* =========================
+   CARD
+========================= */
+.premium-card {
+  width: 100%;
+  max-width: 550px;
+
+  margin: auto;
+
+  background: white;
+
+  border-radius: 25px;
+
+  padding: 40px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+  position: relative;
+}
+
+/* BADGE */
+.premium-badge {
+  position: absolute;
+
+  top: -12px;
+  right: 25px;
+
+  background: #133a63;
+
+  color: white;
+
+  padding: 8px 16px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.premium-card h2 {
+  margin-top: 10px;
+  margin-bottom: 25px;
+
+  font-size: 30px;
+
+  color: #111827;
+}
+
+/* =========================
+   BENEFITS
+========================= */
+.premium-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 15px 18px;
+
+  border-radius: 14px;
+
+  background: #f9fafb;
+
+  color: #111827;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  transition: 0.2s;
+}
+
+.benefit-item:hover {
+  transform: translateX(4px);
+  background: #eef4ff;
+}
+
+/* =========================
+   PRICE
+========================= */
+.premium-price {
+  margin-top: 35px;
+
+  text-align: center;
+
+  font-size: 42px;
+  font-weight: 800;
+
+  color: #133a63;
+}
+
+.premium-price span {
+  font-size: 18px;
+  color: #6b7280;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.upgrade-btn {
+  width: 100%;
+
+  margin-top: 25px;
+
+  padding: 15px;
+
+  border: none;
+  border-radius: 14px;
+
+  background: #133a63;
+
+  color: white;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.upgrade-btn:hover {
+  transform: translateY(-3px);
+
+  background: #0f2a44;
+
+  box-shadow: 0 10px 20px rgba(19, 58, 99, 0.3);
+}

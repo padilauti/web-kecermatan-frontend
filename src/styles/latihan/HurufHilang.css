@@ -1,0 +1,167 @@
+.training-page {
+  padding: 24px;
+}
+
+.training-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #0f2a44;
+}
+
+.page-subtitle {
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+/* CARD */
+.training-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.training-card:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.training-icon {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.training-card h2 {
+  color: #0f2a44;
+  margin-bottom: 10px;
+}
+
+.training-card p {
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+/* INFO BOX */
+.info-box {
+  display: flex;
+  gap: 15px;
+  margin: 25px 0;
+  flex-wrap: wrap;
+}
+
+.info-item {
+  flex: 1;
+  min-width: 120px;
+  background: #f8f9fc;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #edf0f5;
+  transition: 0.2s;
+}
+
+/* 🔥 HOVER KECIL BIAR HIDUP */
+.info-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* 🔥 INI FIX: ANGKA JADI BIRU */
+.info-item h3 {
+  font-size: 22px;
+  margin: 0;
+  color: #1e4f8a;   /* BLUE UTAMA */
+  font-weight: 800;
+}
+
+.info-item span {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* BANNER */
+.simulation-banner {
+  background: #eef6ff;
+  border: 1px solid #d6e7ff;
+  color: #1e4f8a;
+  padding: 14px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* INSTRUCTION */
+.instruction-box {
+  background: #f8f9fc;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+.instruction-box h3 {
+  color: #0f2a44;
+  margin-bottom: 12px;
+}
+
+.instruction-box ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.instruction-box li {
+  margin-bottom: 8px;
+  color: #4b5563;
+}
+
+/* BUTTON */
+.start-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 14px;
+  background: #1e4f8a;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(30, 79, 138, 0.35);
+}
+
+.start-btn:hover {
+  background: #184274;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(30, 79, 138, 0.45);
+}
+
+.start-btn:active {
+  transform: scale(0.98);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .training-page {
+    padding: 16px;
+  }
+
+  .training-card {
+    padding: 20px;
+  }
+
+  .info-box {
+    flex-direction: column;
+  }
+
+  .page-title {
+    font-size: 24px;
+  }
+}

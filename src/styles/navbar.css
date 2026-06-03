@@ -1,0 +1,125 @@
+.navbar{
+  background:white;
+  padding:25px 30px;
+  border-radius:10px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* KIRI */
+.navbar-left{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.navbar-left h3{
+  margin:0;
+  font-size:24px;
+  font-weight:700;
+}
+
+.navbar-left p{
+  margin:0;
+  font-size:14px;
+  color:gray;
+}
+
+/* KANAN */
+.navbar-right{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+
+/* ICON BUTTON */
+.icon-btn{
+  background:#f3f4f6;
+  border:none;
+  padding:10px;
+  border-radius:10px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.icon-btn:hover{
+  background:#e5e7eb;
+}
+
+/* HAMBURGER */
+.menu-btn{
+  background:#f3f4f6;
+  border:none;
+  padding:10px 12px;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+/* USER DROPDOWN WRAPPER */
+.user-wrapper{
+  position:relative;
+}
+
+/* DROPDOWN BOX */
+.dropdown{
+  position:absolute;
+  right:0;
+  top:45px;
+  width:220px;
+  background:white;
+  border-radius:12px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+  padding:10px;
+  z-index:100;
+}
+
+/* PROFILE IMAGE */
+.profile-box{
+  display:flex;
+  justify-content:center;
+  margin-top:10px;
+}
+
+.profile-img{
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  object-fit:cover;
+  border:2px solid #e5e7eb;
+}
+
+/* USER INFO CENTER */
+.user-info{
+  text-align:center;
+  padding:10px 0;
+}
+
+.user-info .name{
+  margin:0;
+  font-weight:bold;
+}
+
+.user-info .role{
+  margin:0;
+  font-size:12px;
+  color:gray;
+}
+
+/* ITEM MENU */
+.dropdown-item{
+  padding:10px;
+  cursor:pointer;
+  border-radius:8px;
+  transition:0.2s;
+}
+
+.dropdown-item:hover{
+  background:#f3f4f6;
+}
+
+/* LOGOUT */
+.logout{
+  color:red;
+}

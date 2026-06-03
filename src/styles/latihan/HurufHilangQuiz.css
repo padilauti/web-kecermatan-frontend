@@ -1,0 +1,242 @@
+.quiz-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px;
+}
+
+.quiz-container {
+  width: 100%;
+  max-width: 1000px; /* 🔥 lebih lebar */
+  min-height: 50vh;   /* 🔥 hampir full layar */
+  background: white;
+
+  padding: 60px; /* 🔥 lebih lega */
+
+  border-radius: 25px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, .12);
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 40px;
+}
+
+.quiz-number {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.quiz-timer {
+  font-size: 20px;
+  font-weight: 700;
+  color: #e53935;   /* 🔥 merah */
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.quiz-question {
+  text-align: center;
+
+  font-size: 60px;
+  font-weight: 700;
+
+  letter-spacing: 15px;
+
+  margin: 60px 0;
+}
+
+.option-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+  flex-wrap: wrap;
+}
+
+.option-btn {
+  width: 80px;
+  height: 80px;
+
+  border: none;
+
+  background: #f4f5fb;
+
+  border-radius: 15px;
+
+  font-size: 28px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: .2s;
+}
+
+.option-btn:hover {
+  background: #1e4f8a;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.option-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 0;
+
+  /* 🔥 BORDER LUAR BOLD */
+  border: 6px solid #000;
+}
+
+.option-box {
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+/* LABEL */
+.label-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 0;
+
+  /* 🔥 BORDER LUAR BOLD JUGA */
+  border: 6px solid #000;
+  border-top: none; /* biar nempel ke option-grid */
+}
+
+.label-box {
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 28px;
+  font-size: 16px;
+  font-weight: 900;
+  background: #f5f5f5;
+}
+
+/* 🔥 biar nempel rapih */
+.label-grid {
+  margin-top: -6px;
+}
+
+.quiz-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #163a66;
+  letter-spacing: 2px;
+}
+
+.quiz-divider {
+  width: 100%;
+  height: 3px;              /* 🔥 lebih tebel */
+  background: #163a66;      /* 🔥 sama kayak judul */
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+
+.quiz-number-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: #163a66;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+/* TIMER NORMAL (BIRU) */
+.quiz-timer.safe {
+  color: #1e4f8a;
+  font-weight: 800;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* TIMER KRITIS (MERAH) <= 10 DETIK */
+.quiz-timer.danger {
+  color: #e53935;
+  font-weight: 900;
+  font-size: 20px;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.4;
+  }
+}
+
+/* BADGE KOLOM */
+.quiz-number-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: #163a66;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+
+.start-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-blue {
+  font-size: 120px;
+  font-weight: 900;
+  color: #1e4f8a;
+}
+
+.countdown-text {
+  margin-top: 10px;
+  font-size: 28px;
+  font-weight: 800;
+  color: #1e4f8a;
+  letter-spacing: 3px;
+}
+
+.quiz-counter {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #163a66;
+  letter-spacing: 1px;
+}

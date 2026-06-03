@@ -1,0 +1,106 @@
+.history-wrapper {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+
+  width: 100%;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+/* TABLE */
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  table-layout: fixed;
+}
+
+.history-table th,
+.history-table td {
+  text-align: left;
+  padding: 14px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.history-table th {
+  background: #f9fafb;
+}
+
+/* hover */
+.history-table tbody tr:hover {
+  background: #f3f4f6;
+}
+
+/* skor */
+.score {
+  font-weight: bold;
+}
+
+/* status */
+.status.success {
+  color: #16a34a;
+  background: #dcfce7;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.status.failed {
+  color: #dc2626;
+  background: #fee2e2;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+/* BUTTON */
+.history-wrapper button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.history-wrapper button:hover {
+  background: #2563eb;
+}
+
+/* PAGINATION */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* kiri */
+.pagination-info {
+  color: #666;
+}
+
+/* kanan */
+.pagination-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination-btn button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pagination-btn button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}

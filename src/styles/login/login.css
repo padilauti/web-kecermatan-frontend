@@ -1,0 +1,253 @@
+
+/* =========================
+   CONTAINER
+========================= */
+.login-container {
+  height: 100vh;
+  width: 100%;
+
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  padding-right: 80px;
+}
+
+/* =========================
+   BACKGROUND
+========================= */
+.login-bg {
+  position: fixed;
+  inset: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+  z-index: 0;
+}
+
+/* =========================
+   OVERLAY
+========================= */
+.overlay {
+  position: fixed;
+  inset: 0;
+
+
+
+  z-index: 1;
+}
+
+/* =========================
+   LOGIN CARD
+========================= */
+.login-card {
+  position: relative;
+  z-index: 2;
+
+  width: 500px;
+  padding: 50px 40px;
+  border-radius: 18px;
+
+  background: rgba(15, 42, 68, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+  color: white;
+  text-align: center;
+
+  overflow: hidden;
+
+  transform: translateX(-100px);
+}
+
+/* =========================
+   ICON USER (KIRI ATAS)
+========================= */
+.icon-user.left {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* =========================
+   TEXT HEADER (BESAR)
+========================= */
+.login-text h2 {
+  margin: 0;
+  font-size: 32px;   /* 🔥 BESAR */
+  font-weight: 800;
+}
+
+.login-text p {
+  margin-top: 8px;
+  font-size: 18px;   /* 🔥 BESAR */
+  opacity: 0.9;
+}
+
+/* =========================
+   INPUT BOX
+========================= */
+.input-box {
+  position: relative;
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 40px 12px 35px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+
+  outline: none;
+
+  font-size: 17px;  /* 🔥 BESAR */
+
+  box-sizing: border-box;
+}
+
+.input-box input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+}
+
+/* ICON INPUT */
+.input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+}
+
+/* ICON MATA */
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* =========================
+   LUPA PASSWORD
+========================= */
+.forgot {
+  text-align: right;
+  font-size: 15px;  /* 🔥 BESAR */
+  margin-bottom: 14px;
+
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+.forgot:hover {
+  opacity: 1;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.login-card button {
+  width: 100%;
+  padding: 12px;
+
+  background: white;
+  color: #0f2a44;
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 18px;  /* 🔥 BESAR */
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.login-card button:hover {
+  transform: translateY(-2px);
+  background: #e5e7eb;
+}
+
+/* =========================
+   REGISTER
+========================= */
+.register {
+  margin-top: 14px;
+  font-size: 15px;  /* 🔥 BESAR */
+  opacity: 0.85;
+}
+
+.register span {
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+.popup-success {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #22c55e;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  animation: slideIn 0.3s ease;
+  z-index: 9999;
+}
+
+.popup-error {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #ef4444;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  z-index: 9999;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
