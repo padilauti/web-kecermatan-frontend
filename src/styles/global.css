@@ -14,8 +14,11 @@ body {
 
 .main-content {
   flex: 1;
-  padding: 0;
+  padding: 0 20px;
   min-width: 0;
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 /* 4 CARD ATAS */
@@ -138,9 +141,11 @@ body {
     width: 100%;
   }
 
+  /* tablet and small laptops: show cards as 2 columns (2x2) */
   .cards {
-    grid-template-columns: 1fr;
-    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr) !important;
+    max-width: 100% !important;
+    padding: 0 16px !important;
   }
 
   .dashboard-content {
@@ -168,8 +173,10 @@ body {
     padding: 15px;
   }
 
+  /* mobile phones: keep 2 columns so cards form 2x2 */
   .cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr) !important;
+    padding: 0 12px !important;
   }
 
   .dashboard-content {
@@ -182,7 +189,9 @@ body {
     padding: 15px;
   }
 
+  /* very small phones: single column */
   .cards {
-    gap: 15px;
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 }
